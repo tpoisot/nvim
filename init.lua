@@ -119,6 +119,9 @@ require("lazy").setup({
     {
         "Olical/conjure"
     },
+    {
+        "folke/twilight.nvim"
+    }
 })
 
 -- This file contains most of what is usually in init.vim, but expressed using the neovim

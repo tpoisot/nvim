@@ -39,6 +39,5 @@ vim.keymap.set("n", "<leader>j", "<C-w>j", {})
 vim.keymap.set("n", "<leader>k", "<C-w>k", {})
 vim.keymap.set("n", "<leader>l", "<C-w>l", {})
 
--- Slime
-vim.keymap.set("v", "<leader>ss", ":SlimeSend<CR>", {})
-vim.keymap.set("n", "<leader>ss", ":SlimeSendCurrentLine<CR>", {})
+-- Twilight
+vim.keymap.set("n", "<leader>tw", ":Twilight<CR>", {})
