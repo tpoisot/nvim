@@ -33,7 +33,7 @@ require("lazy").setup({
         "nvim-treesitter/nvim-treesitter",
         config = function()
             require("nvim-treesitter.configs").setup {
-                ensure_installer = {
+                ensure_installed = {
                     "julia",
                     "markdown",
                     "css",
@@ -85,11 +85,8 @@ require("lazy").setup({
         priority = 1000,
         lazy = false,
 		config = function()
-			vim.cmd([[colorscheme tokyonight]])
+			vim.cmd([[colorscheme tokyonight-moon]])
 		end
-    },
-    {
-     "ellisonleao/gruvbox.nvim"   
     },
 	"ellisonleao/carbon-now.nvim",
 	{
@@ -123,9 +120,6 @@ require("lazy").setup({
         "Olical/conjure"
     },
 })
-
--- Packer manages all the plugins, with a file specifically for its configuration
--- require('plugins')
 
 -- This file contains most of what is usually in init.vim, but expressed using the neovim
 -- api. The lua files are all in the lua/ folder
