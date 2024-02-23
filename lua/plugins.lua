@@ -20,14 +20,6 @@ require("lazy").setup({
 	"neovim/nvim-lspconfig",
 	"kkharji/lspsaga.nvim",
 	"antoinemadec/FixCursorHold.nvim",
-    {
-        "kosayoda/nvim-lightbulb",
-        config = function()
-            require("nvim-lightbulb").setup {
-                autocmd = { enabled = true }
-            }
-        end
-    },
 	"sunjon/shade.nvim",
 	"lukas-reineke/lsp-format.nvim",
 	"williamboman/mason.nvim",
