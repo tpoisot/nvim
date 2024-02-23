@@ -124,7 +124,12 @@ require("lazy").setup({
 		end
 	},
 	"nvim-lualine/lualine.nvim",
-	"lukas-reineke/indent-blankline.nvim",
+    {
+        "lukas-reineke/indent-blankline.nvim",
+        config = function()
+            require("ibl").setup()
+        end
+    },
 	{
 		"numToStr/Comment.nvim",
 		config = function()
