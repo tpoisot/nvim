@@ -82,6 +82,17 @@ require("lazy").setup({
         priority = 1000,
         lazy = false,
 		config = function()
+            require("kanagawa").setup({
+                colors = {
+                    theme = {
+                        all = {
+                            ui = {
+                                bg_gutter = "none"
+                            }
+                        }
+                    }
+                }
+            })
 			vim.cmd([[colorscheme kanagawa]])
 		end
     },
