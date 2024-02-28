@@ -75,7 +75,14 @@ require("lazy").setup({
 		}
 	},
 	"rstacruz/vim-closer",
-	"tpope/vim-surround",
+    {
+        "kylechui/nvim-surround",
+        version = "*",
+        event = "VeryLazy",
+        config = function()
+            require("nvim-surround").setup({})
+        end
+    },
     {
         "rebelot/kanagawa.nvim",
         name = "Kanagawa theme",
