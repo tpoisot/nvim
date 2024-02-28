@@ -155,6 +155,12 @@ require("lazy").setup({
     {
         "folke/todo-comments.nvim",
         dependencies = { "nvim-lua/plenary.nvim" }
+    },
+    {
+        "chentoast/marks.nvim",
+        config = function()
+            require("marks").setup({})
+        end
     }
 })
 
