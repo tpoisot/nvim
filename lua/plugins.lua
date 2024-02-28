@@ -151,6 +151,10 @@ require("lazy").setup({
     },
     {
         "folke/twilight.nvim"
+    },
+    {
+        "folke/todo-comments.nvim",
+        dependencies = { "nvim-lua/plenary.nvim" }
     }
 })
 
