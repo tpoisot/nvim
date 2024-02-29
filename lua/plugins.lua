@@ -147,9 +147,6 @@ require("lazy").setup({
 		end
 	},
     {
-        "Olical/conjure"
-    },
-    {
         "folke/twilight.nvim"
     },
     {
@@ -165,6 +162,13 @@ require("lazy").setup({
         config = function()
             require("marks").setup()
         end
+    },
+    {
+        "akinsho/toggleterm.nvim",
+        version = "*",
+        opts = {
+            direction = "float"
+        }
     }
 })
 
