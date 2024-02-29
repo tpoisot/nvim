@@ -84,23 +84,12 @@ require("lazy").setup({
         end
     },
     {
-        "rebelot/kanagawa.nvim",
-        name = "Kanagawa theme",
+        "catppuccin/nvim",
+        name = "Catppuccin",
         priority = 1000,
         lazy = false,
         config = function()
-            require("kanagawa").setup({
-                colors = {
-                    theme = {
-                        all = {
-                            ui = {
-                                bg_gutter = "none"
-                            }
-                        }
-                    }
-                }
-            })
-			vim.cmd([[colorscheme kanagawa]])
+			vim.cmd([[colorscheme catppuccin]])
 		end
     },
 	"ellisonleao/carbon-now.nvim",
@@ -169,12 +158,6 @@ require("lazy").setup({
         opts = {
             direction = "float"
         }
-    },
-    {
-        "folke/tokyonight.nvim",
-        name = "Tokyo night theme",
-        priority = 1000,
-        lazy = false,
     },
 })
 
