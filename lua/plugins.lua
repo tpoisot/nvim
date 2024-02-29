@@ -169,6 +169,12 @@ require("lazy").setup({
         opts = {
             direction = "float"
         }
-    }
+    },
+    {
+        "folke/tokyonight.nvim",
+        name = "Tokyo night theme",
+        priority = 1000,
+        lazy = false,
+    },
 })
 
