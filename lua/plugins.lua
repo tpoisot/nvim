@@ -84,12 +84,23 @@ require("lazy").setup({
         end
     },
     {
-        "catppuccin/nvim",
-        name = "Catppuccin",
+        "rebelot/kanagawa.nvim",
+        name = "Kanagawa",
         priority = 1000,
         lazy = false,
         config = function()
-			vim.cmd([[colorscheme catppuccin]])
+            require('kanagawa').setup({
+                colors = {
+                    theme = {
+                        all = {
+                            ui = {
+                                bg_gutter = "none"
+                            }
+                        }
+                    }
+                }
+            })
+			vim.cmd([[colorscheme kanagawa]])
 		end
     },
 	"ellisonleao/carbon-now.nvim",
