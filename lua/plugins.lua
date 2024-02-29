@@ -88,7 +88,7 @@ require("lazy").setup({
         name = "Kanagawa theme",
         priority = 1000,
         lazy = false,
-		config = function()
+        config = function()
             require("kanagawa").setup({
                 colors = {
                     theme = {
@@ -155,14 +155,15 @@ require("lazy").setup({
     {
         "folke/todo-comments.nvim",
         config = function()
-            require("todo-comments").setup({})
+            require("todo-comments").setup()
         end,
+        opts = {},
         dependencies = { "nvim-lua/plenary.nvim" }
     },
     {
         "chentoast/marks.nvim",
         config = function()
-            require("marks").setup({})
+            require("marks").setup()
         end
     }
 })
